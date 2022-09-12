@@ -1,0 +1,45 @@
+header {
+    background-color: aquamarine;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+nav {
+    height: 50px;
+    background-color: lightcoral;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+section {
+    width: 70%;
+    background-color: lightblue;
+}
+
+article {
+    margin: 0 15px;
+    background-color: lightyellow;
+}
+
+aside {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: pink;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    background-color: lavender;
+}

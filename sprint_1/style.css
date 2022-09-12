@@ -1,0 +1,130 @@
+/* 
+body
+
+css color variable
+https: //www.w3schools.com/css/css3_variables.asp 
+*/
+
+body {
+    background-color: rgb(244 248 254);
+    --color-var: lavender;
+    --medium-gray: #7a88ba;
+    --medium-blue: rgb(228 239 252);
+    --frog-green: #62d76b;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: rgb(62 65 109);
+    margin: 20px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+.prework {
+    color: var(--frog-green)
+}
+
+.description {
+    color: var(--medium-gray);
+}
+
+/* nav, footer */
+
+nav > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--medium-gray);
+}
+
+nav .jump {
+    color: #0078e6;
+}
+
+.btn {
+    background-color: var(--medium-blue);
+    border-radius: 15px;
+    padding: 8px;
+    /* color: var(--medium-gray); */
+}
+
+nav, footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+footer {
+    justify-content: space-evenly;
+    background-color: var(--color-var)
+}
+
+footer > div > a {
+    text-decoration: none;
+}
+
+/* main */
+
+.section {
+    /* background-color: lightblue; */
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.items {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 25px;
+}
+
+.item-p {
+    padding: 17px 20px 0;
+    margin-bottom: 5px;
+    color: var(--frog-green);
+}
+
+.item li {
+    padding-bottom: 10px;
+}
+
+.item > .btn {
+    background-color: var(--frog-green);
+    margin-left: 20px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    /* remove underline for a tag */
+}
+
+.item-title {
+    border-bottom: solid 2px var(--frog-green);
+    margin: 0px 20px;
+    /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
+    padding-bottom: 10px;
+}
+
+aside {
+    width: 30%;
+    height: 250px;
+    margin: 15px;
+    padding: 25px;
+}
+
+aside > .aside-prework {
+    color: #0078e6;    
+}
