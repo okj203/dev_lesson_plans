@@ -1,0 +1,131 @@
+/* 
+body
+
+css color variable
+https: //www.w3schools.com/css/css3_variables.asp 
+*/
+
+body {
+    background-color: rgb(244 248 254);
+    --color-var: lavender;
+    --medium-gray: #7a88ba;
+    --medium-blue: rgb(228 239 252);
+    /* rgb stands for red, green, blue, and refers to a system for representing the colors to be used on a computer display. */
+    --frog-green: #62d76b;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: rgb(62 65 109);
+    margin: 50px;
+}
+
+/* header */
+
+header {
+    /* display: flex;
+    justify-content: space-evenly; */
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+.prework {
+    color: var(--frog-green)
+}
+
+.description {
+    color: var(--medium-gray);
+}
+
+/* nav, footer */
+
+nav > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--medium-gray);
+}
+
+nav .jump {
+    color: #0078e6;
+}
+
+.btn {
+    background-color: var(--medium-blue);
+    border-radius: 15px;
+    padding: 8px;
+}
+
+nav, footer {
+    /* Uncomment below to demo flex */
+    /* display: flex;
+    align-items: center; */
+    height: 50px;
+}
+
+footer {
+    /* Uncomment below to demo flex */
+    /* justify-content: space-evenly; */
+    background-color: var(--color-var)
+}
+
+footer > div > a {
+    text-decoration: none;
+}
+
+/* main */
+
+.section {
+    /* Uncomment below to demo flex */
+    /* display: flex; */
+    margin-bottom: 25px;
+}
+
+.items {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 25px;
+}
+
+.item-p {
+    padding: 17px 20px 0;
+    margin-bottom: 5px;
+    color: var(--frog-green);
+}
+
+.item li {
+    padding-bottom: 10px;
+}
+
+.item > .btn {
+    background-color: var(--frog-green);
+    margin-left: 20px;
+    padding: 8px;
+    color: white;
+    text-decoration: none; /* removes the underline from an anchor tag */
+}
+
+.item-title {
+    border-bottom: solid 2px var(--frog-green);
+    margin: 0px 20px; /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
+    padding-bottom: 10px;
+}
+
+aside {
+    width: 30%;
+    height: 35%; /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
+    margin: 15px;
+    padding: 25px;
+}
+
+aside > .aside-prework {
+    color: #0078e6;    
+}

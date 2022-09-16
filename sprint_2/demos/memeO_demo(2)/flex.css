@@ -10,11 +10,12 @@ body {
     --color-var: lavender;
     --medium-gray: #7a88ba;
     --medium-blue: rgb(228 239 252);
+    /* rgb stands for red, green, blue, and refers to a system for representing the colors to be used on a computer display. */
     --frog-green: #62d76b;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: rgb(62 65 109);
-    margin: 20px;
+    margin: 50px;
 }
 
 /* header */
@@ -23,6 +24,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    margin: 50px 0 50px 0;
 }
 
 img {
@@ -55,7 +57,6 @@ nav .jump {
     background-color: var(--medium-blue);
     border-radius: 15px;
     padding: 8px;
-    /* color: var(--medium-gray); */
 }
 
 nav, footer {
@@ -76,7 +77,6 @@ footer > div > a {
 /* main */
 
 .section {
-    /* background-color: lightblue; */
     display: flex;
     margin-bottom: 25px;
 }
@@ -120,7 +120,8 @@ footer > div > a {
 
 aside {
     width: 30%;
-    height: 250px;
+    height: 35%;
+    /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
     margin: 15px;
     padding: 25px;
 }
