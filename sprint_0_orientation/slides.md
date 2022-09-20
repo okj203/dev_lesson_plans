@@ -1,5 +1,7 @@
 ---
 marp: true
+theme: default
+class: invert
 ---
 
 # Housekeeping Rules
@@ -35,6 +37,7 @@ marp: true
 ## Cohort Culture 
 * Be kind to each other
 * This is NOT a competition
+* **RESPOND TO INSTRUCTORS' SLACK MESSAGES**
 
 ---
 
@@ -48,10 +51,11 @@ All the learning materials and live lecture videos, which you have gained access
 
 ---
 
-+ Bi-weekly 1-on-1s: link available on our slack channel `cohort_20`
+## To-Do List
 
-+ Survey Due: Tuesday 9:00PM EST
-https://forms.gle/WCYnvGcQG8cSeqjC7
+1. [Bi-weekly 1-on-1s](https://calendly.com/cathy-267/30min-1?month=2022-09&date=2022-09-21): link available on our slack channel `cohort_20`
+2. [Survey Due: Tuesday 9:00PM EST](https://forms.gle/WCYnvGcQG8cSeqjC7)
+3. Mimo_Dev Sprint 1
 
 ---
 

@@ -1,5 +1,7 @@
 ---
 marp: true
+theme: default
+class: invert
 ---
 
 # Sprint 1

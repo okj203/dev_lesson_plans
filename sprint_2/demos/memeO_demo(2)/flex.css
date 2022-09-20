@@ -18,6 +18,13 @@ body {
     margin: 50px;
 }
 
+.meme_o {
+    text-decoration: none;
+    font-size: 20pt;
+    color: inherit;
+    /* By default an anchor tag does not inherit attributes like color if an href attribute is present. */
+}
+
 /* header */
 
 header {
@@ -76,7 +83,7 @@ footer > div > a {
 
 /* main */
 
-.section {
+.content {
     display: flex;
     margin-bottom: 25px;
 }
