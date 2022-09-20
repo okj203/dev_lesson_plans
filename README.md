@@ -1,7 +1,6 @@
 # How to use this repo
 This repo is created to help instructors prepare for Mimo lectures in the most efficient way possible. By utilizing the lecture prep materials provided in this repo, instructors won't need to reinvent the wheel for every cohort!
 
----
 
 ## Marp VS Code extension
 + Installing Marp is highly recommended, but not required, to utilize this repo.
