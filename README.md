@@ -15,7 +15,6 @@ This repo is created to help instructors prepare for Mimo lectures in the most e
 + Please check out the [docmentation](https://github.com/marp-team/marp-vscode) for instructions and usages.
 
 
-
 ## File  structure 
 ```html
 sprint_1
@@ -37,6 +36,5 @@ sprint_1
 
 
 ## How to contribute to this repo
-
 + If you have any suggestions or would like to contribute to this repo, please create a separate branch to make a pull request. Branch name should include your name as well as the sprint, which you would like to contribute to. i.e. `cathy_sprint_2`. Your suggestions and contributions will be carefully reviewed by the Mimo instructional team to be merged to main. 
 + If you have any questions or concerns, please reach out to `cathy@getmimo.com`. 

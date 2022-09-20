@@ -1,3 +1,5 @@
+<!-- instructor's notes -->
+
 # Housekeeping Rules
 * I'd like to talk about a few housekeeping rules for everyone to have the best Mimo experience.
 

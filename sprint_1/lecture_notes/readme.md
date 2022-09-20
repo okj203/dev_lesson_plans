@@ -1,3 +1,5 @@
+<!-- instructor's notes -->
+
 # Sprint 1
 ## HTML & CSS Basics
 
@@ -84,7 +86,8 @@
 ---
 
 ## 3. HTML Demo
-* Check out the `readme.md` inside one of the demos.
+
+<!-- Present the HTML portion of the demo of your choice. -->
 
 ---
 
@@ -98,6 +101,8 @@
 
 ![cssStructure](./assets/cssStructure.png)
 
++ If HTML is a frame of a car, CSS is the design of the car - what color is this car? How many doors does it have? How big are the windows? JavaScript is the engine of the car. Using JavaScript, we can make it move! So far we've built a frame, and now we're going to apply styles to it.
+
 ---
 
 ## 5. Common CSS Selectors & Properties
@@ -109,13 +114,16 @@
 ---
 
 ## 6. CSS Demo
-* Check out the `readme.md` inside one of the demos.
+
+<!-- Present the CSS portion of the demo of your choice. -->
 
 ---
 
 ## To-Do List
 1. Mimo_dev - Sprint 1
-2. The Bean Machine project - Replit
+2. The Bean Machine project - Replit 
+
++ Let's go over how to use Replit.
 
 ---
 
