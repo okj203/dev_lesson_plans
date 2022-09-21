@@ -11,6 +11,9 @@ https://fonts.google.com/specimen/Rubik
 If we look up the documentation of how to use the google font, it seems pretty simple. We can either check out the `API docs(https://developers.google.com/fonts/docs/css2)` or check out: https://www.w3schools.com/css/css_font_google.asp
 
 ```css
+/* css color variable
+https: //www.w3schools.com/css/css3_variables.asp  */
+
 body {
     background-color: rgb(244 248 254);
     --color-var: lavender;
