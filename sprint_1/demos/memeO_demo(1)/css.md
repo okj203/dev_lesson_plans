@@ -31,7 +31,7 @@ Since the same color is being used for majority of the text across the site, we 
 ```css
 .meme_o {
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 20pt; /* pt stands for "point" but there are many ways we can choose a font-size: https: //developer.mozilla.org/en-US/docs/Web/CSS/font-size */
     color: inherit;
     /* By default an anchor tag does not inherit attributes like color if an href attribute is present. */
 }
