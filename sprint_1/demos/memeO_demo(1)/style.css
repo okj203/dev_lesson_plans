@@ -1,6 +1,4 @@
-/* body */
-
-body {
+:root {
     background-color: rgb(244 248 254);
     --color-var: lavender;
     --medium-gray: #7a88ba;
@@ -10,6 +8,16 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: rgb(62 65 109);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+body {
     margin: 50px;
 }
 
@@ -28,6 +36,11 @@ header {
     justify-content: space-evenly; */
     text-align: center;
     margin: 50px 0 50px 0;
+    /* top - right - bottom - left */
+}
+
+.header-text {
+    margin: 10px 0;
 }
 
 img {
@@ -37,14 +50,19 @@ img {
 }
 
 .prework {
-    color: var(--frog-green)
+    color: var(--frog-green);
 }
 
 .description {
     color: var(--medium-gray);
 }
 
+
 /* nav, footer */
+
+nav {
+    margin: 0 0 10px 0;
+}
 
 nav > a { /* immediate children */
     margin-left: 20px;
@@ -52,7 +70,11 @@ nav > a { /* immediate children */
     color: var(--medium-gray);
 }
 
-nav .jump { /* decendent */
+nav .jump { 
+    /* decendent */
+    /* nav a:first-child { */
+    /* nav a:last-child { */
+    /* nav a:nth-child(3) { */
     color: #0078e6;
 }
 
@@ -81,11 +103,10 @@ footer > div > a {
 
 /* main */
 
-.content {
-    /* Uncomment below to demo flex */
-    /* display: flex; */
-    margin-bottom: 25px;
-}
+/* Uncomment below to demo flex */
+/* .content {
+    display: flex;
+} */
 
 .items {
     width: 70%;
@@ -95,6 +116,7 @@ footer > div > a {
 .item {
     background-color: white;
     border-radius: 15px;
+    margin-bottom: 25px;
     padding-bottom: 25px;
 }
 
@@ -108,10 +130,13 @@ footer > div > a {
     padding-bottom: 10px;
 }
 
+.item > ul {
+    margin: 15px 0 15px 45px;
+}
+
 .item > .btn {
     background-color: var(--frog-green);
     margin-left: 20px;
-    padding: 8px;
     color: white;
     text-decoration: none; /* removes the underline from an anchor tag */
 }
@@ -124,11 +149,14 @@ footer > div > a {
 
 /* aside */
 
-aside {
+.aside {
     width: 30%;
-    height: 35%; /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
-    margin: 15px;
-    padding: 25px;
+    height: 40%; 
+    /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 25px;
+    padding: 50px 20px;
 }
 
 aside > .aside-prework {

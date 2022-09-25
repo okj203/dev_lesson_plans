@@ -1,11 +1,4 @@
-/* 
-body
-
-css color variable
-https: //www.w3schools.com/css/css3_variables.asp 
-*/
-
-body {
+:root {
     background-color: rgb(244 248 254);
     --color-var: lavender;
     --medium-gray: #7a88ba;
@@ -15,6 +8,16 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: rgb(62 65 109);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+body {
     margin: 50px;
 }
 
@@ -28,10 +31,16 @@ body {
 /* header */
 
 header {
+    /* Uncomment below to demo flex */
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     margin: 50px 0 50px 0;
+    /* top - right - bottom - left */
+}
+
+.header-text {
+    margin: 10px 0;
 }
 
 img {
@@ -41,22 +50,31 @@ img {
 }
 
 .prework {
-    color: var(--frog-green)
+    color: var(--frog-green);
 }
 
 .description {
     color: var(--medium-gray);
 }
 
+
 /* nav, footer */
 
-nav > a {
+nav {
+    margin: 0 0 10px 0;
+}
+
+nav > a { /* immediate children */
     margin-left: 20px;
     text-decoration: none;
     color: var(--medium-gray);
 }
 
-nav .jump {
+nav .jump { 
+    /* decendent */
+    /* nav a:first-child { */
+    /* nav a:last-child { */
+    /* nav a:nth-child(3) { */
     color: #0078e6;
 }
 
@@ -67,12 +85,14 @@ nav .jump {
 }
 
 nav, footer {
+    /* Uncomment below to demo flex */
     display: flex;
     align-items: center;
     height: 50px;
 }
 
 footer {
+    /* Uncomment below to demo flex */
     justify-content: space-evenly;
     background-color: var(--color-var)
 }
@@ -83,9 +103,9 @@ footer > div > a {
 
 /* main */
 
+/* Uncomment below to demo flex */
 .content {
     display: flex;
-    margin-bottom: 25px;
 }
 
 .items {
@@ -96,6 +116,7 @@ footer > div > a {
 .item {
     background-color: white;
     border-radius: 15px;
+    margin-bottom: 25px;
     padding-bottom: 25px;
 }
 
@@ -109,28 +130,33 @@ footer > div > a {
     padding-bottom: 10px;
 }
 
+.item > ul {
+    margin: 15px 0 15px 45px;
+}
+
 .item > .btn {
     background-color: var(--frog-green);
     margin-left: 20px;
-    padding: 8px;
     color: white;
-    text-decoration: none;
-    /* remove underline for a tag */
+    text-decoration: none; /* removes the underline from an anchor tag */
 }
 
 .item-title {
     border-bottom: solid 2px var(--frog-green);
-    margin: 0px 20px;
-    /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
+    margin: 0px 20px; /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
     padding-bottom: 10px;
 }
 
-aside {
+/* aside */
+
+.aside {
     width: 30%;
-    height: 35%;
+    height: 40%; 
     /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
-    margin: 15px;
-    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 25px;
+    padding: 50px 20px;
 }
 
 aside > .aside-prework {

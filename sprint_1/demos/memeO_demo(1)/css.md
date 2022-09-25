@@ -14,7 +14,11 @@ If we look up the documentation of how to use the google font, it seems pretty s
 /* css color variable
 https: //www.w3schools.com/css/css3_variables.asp  */
 
-body {
+/* The :root CSS pseudo-class matches the root element of a tree representing the document. In HTML,
+:root represents the <html>element and is identical to the selector html,
+except that its specificity is higher. */
+
+:root {
     background-color: rgb(244 248 254);
     --color-var: lavender;
     --medium-gray: #7a88ba;
@@ -22,12 +26,21 @@ body {
     /* rgb stands for red, green, blue, and refers to a system for representing the colors to be used on a computer display. */
     --frog-green: #62d76b;
     font-family: 'Rubik', sans-serif;
-    font-weight: 400;
     color: rgb(62 65 109);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+body {
     margin: 50px;
 }
 ```
-Since the same color is being used for majority of the text across the site, we can also apply the color property to the body, the parent element of all. Then the text color that we apply to the body "cascades" to be applied to all of its children. By doing so, we don't need to apply the text color individually to every single element, one by one. This is why it's called Cascading Style Sheets.
+Since the same color is being used for majority of the text across the site, we can also apply the color property to the :root, the parent element of all. Then the text color that we apply to the :root "cascades" to be applied to all of its children. By doing so, we don't need to apply the text color individually to every single element, one by one. This is why it's called Cascading Style Sheets.
 
 1. However, something weird happens. The text color doesn't get applied to any of the anchor tags. Anchor tag is a special tag that allows us to visit other sites if we click it. When an anchor tag has an href, it doesn't inherit attributes like color from its parent. Instead, it has it's own default styling. In this case, we can manually tell our anchor tag to inherit the color from its parent and drop the default styling, such as underline.
 
@@ -56,6 +69,10 @@ header {
     /* top - right - bottom - left */
 }
 
+.header-text {
+    margin: 10px 0;
+}
+
 img {
     width: 140px;
     height: 140px;
@@ -76,13 +93,25 @@ img {
 ```css
 /* nav, footer */
 
+nav {
+    /* Uncomment below to demo flex */
+    /* display: flex;
+    align-items: center; */
+    height: 50px;
+    margin: 0 0 10px 0;
+}
+
 nav > a { /* immediate children */
     margin-left: 20px;
     text-decoration: none;
     color: var(--medium-gray);
 }
 
-nav .jump { /* decendent */
+nav .jump { 
+    /* decendent */
+    /* nav a:first-child { */
+    /* nav a:last-child { */
+    /* nav a:nth-child(3) { */
     color: #0078e6;
 }
 
@@ -93,48 +122,25 @@ nav .jump { /* decendent */
 }
 ```
 
-4. Since nav and footer share some properties, let's tackle them together.
-
-Again, we'll talk about how we can align the nav and footer horizontally and vertically during the next lecture. Aligning is for the next lecture! 
-
-```css
-nav, footer {
-    /* Uncomment below to demo flex */
-    /* display: flex;
-    align-items: center; */
-    height: 50px;
-}
-
-footer {
-    /* Uncomment below to demo flex */
-    /* justify-content: space-evenly; */
-    background-color: var(--color-var)
-}
-
-footer > div > a {
-    text-decoration: none;
-}
-```
-
-5. Move onto the main tag. We'll continue to style from a parent to its children, and let the styling cascade.
+4. Move onto the main tag. We'll continue to style from a parent to its children, and let the styling cascade.
 
 ```css
 /* main */
 
-.content {
-    /* Uncomment below to demo flex */
-    /* display: flex; */
-    margin-bottom: 25px;
+/* Uncomment below to demo flex */
+/* .content {
+    display: flex;
 }
 
 .items {
     width: 70%;
     margin-left: 10px;
-}
+} */
 
 .item {
     background-color: white;
     border-radius: 15px;
+    margin-bottom: 25px;
     padding-bottom: 25px;
 }
 
@@ -144,38 +150,61 @@ footer > div > a {
     color: var(--frog-green);
 }
 
+.item-title {
+    border-bottom: solid 2px var(--frog-green);
+    margin: 0px 20px; /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
+    padding-bottom: 10px;
+}
+
+.item > ul {
+    margin: 15px 0 15px 45px;
+}
+
 .item li {
     padding-bottom: 10px;
 }
 
 .item > .btn {
     background-color: var(--frog-green);
-    margin-left: 20px;
-    padding: 8px;
-    color: white;
     text-decoration: none; /* removes the underline from an anchor tag */
-}
-
-.item-title {
-    border-bottom: solid 2px var(--frog-green);
-    margin: 0px 20px; /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
-    padding-bottom: 10px;
+    color: white;
+    margin-left: 20px;
 }
 ```
 
-6. Lastly, the aside tag.
+6. aside
 
 ```css
 /* aside */
 
-aside {
+.aside {
     width: 30%;
-    height: 35%; /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
-    margin: 15px;
-    padding: 25px;
+    height: 40%; 
+    /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 25px;
+    padding: 50px 20px;
 }
 
 aside > .aside-prework {
     color: #0078e6;    
 }
+```
+
+7. footer
+
+```css
+    footer {
+        /* Uncomment below to demo flex */
+        /* display: flex;
+        align-items: center;
+        justify-content: space-evenly; */
+        height: 50px;
+        background-color: var(--color-var)
+    }
+
+    footer > div > a {
+        text-decoration: none;
+    }
 ```

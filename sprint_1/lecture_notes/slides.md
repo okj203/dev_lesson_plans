@@ -79,7 +79,7 @@ class: invert
 
 ---
 
-## Block Element vs Inline Elements
+## Block Elements vs Inline Elements
 
 * Block elements take over the entire row, inline elements don't.
 * [HTML Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
@@ -111,6 +111,13 @@ class: invert
 ---
 
 ## 6. CSS Demo
+
+---
+
+## To-Do List
+1. Sprint 2
+2. Make sure to join Replit team, if you don't have access to it make sure to slack me your email and/or Replit username.
+3. The Bean Machine on Replit
 
 ---
 

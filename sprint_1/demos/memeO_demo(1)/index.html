@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- The rel is required because it specifies the relationship between the current document and the linked document. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- what is "rel=preconnect" https://www.cdnplanet.com/blog/faster-google-webfonts-preconnect/ -->
@@ -21,10 +22,10 @@
     <!-- google html greater than & non-breaking space https://www.google.com/search?q=html+greater-than+&biw=1471&bih=926&ei=nJ8eY7OuFpDn5NoP6MCnsAQ&ved=0ahUKEwiz7N63oI76AhWQM1kFHWjgCUYQ4dUDCA4&uact=5&oq=html+greater-than+&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjoKCAAQRxDWBBCwA0oECEEYAEoECEYYAFDUEljUEmCBFWgCcAF4AIABQYgBQZIBATGYAQCgAQHIAQjAAQE&sclient=gws-wiz -->
     <header>
         <img src="./assets/profile.jpeg" alt="cathy">
-        <div>
-            <h2 class="prework">Prework 1</h2>
-            <h1 class="title">Prework: HTML</h1>
-            <h3 class="description">Here’s your personal plan for the week of Aug 21 - Sep 3, 2022</h3>
+        <div class="header-content">
+            <h2 class="header-text prework">Prework 1</h2>
+            <h1 class="header-text title">Prework: HTML</h1>
+            <h3 class="header-text description">Here’s your personal plan for the week of Aug 21 - Sep 3, 2022</h3>
         </div>
         <img src="./assets/progress.jpg" alt="progress">
     </header>
@@ -33,51 +34,49 @@
         <a class="btn" href="#">&#60; &nbsp; Prework 1 &nbsp; &#62;</a>
         <a class="jump" href="#">Jump to current sprint</a>
     </nav>
-    <main class="main">
-        <div class="content">
-            <section class="items">
-                <article class="item">
-                    <p class="item-p">Learn new skills</p>
-                    <h3 class="item-title">HTML Basics</h3>
-                    <ul>
-                        <li><em>Discovering</em> HTML and Tags</li>
-                        <li><strong>Structuring</strong> Text with Tags</li>
-                        <li>Building Buttons</li>
-                        <li>Creating Links</li>
-                    </ul>
-                    <a href="#" class="btn">Continue</a>
-                </article>
-                <article class="item">
-                    <p class="item-p">Learn new skills</p>
-                    <h3 class="item-title">HTML Basics</h3>
-                    <ul>
-                        <li><em>Discovering</em> HTML and Tags</li>
-                        <li><strong>Structuring</strong> Text with Tags</li>
-                        <li>Building Buttons</li>
-                        <li>Creating Links</li>
-                    </ul>
-                    <a href="#" class="btn">Continue</a>
-                </article>
-                <article class="item">
-                    <p class="item-p">Learn new skills</p>
-                    <h3 class="item-title">HTML Basics</h3>
-                    <ul>
-                        <li><em>Discovering</em> HTML and Tags</li>
-                        <li><strong>Structuring</strong> Text with Tags</li>
-                        <li>Building Buttons</li>
-                        <li>Creating Links</li>
-                    </ul>
-                    <a href="#" class="btn">Continue</a>
-                </article>
-            </section>
-            <aside class="item">
-                <h4 class="aside-prework">PREWORK</h4>
-                <h4 class="aside-desc">What is Prework?</h4>
-                <p>These exercises serve as a warm-up for your coding journey with Mimo Dev. Try to complete as much as you can before
-                starting with your group, but don't worry if you miss something – you don't need to finish every exercise to proceed
-                further.</p>
-            </aside>
-        </div>        
+    <main class="content">
+        <section class="items">
+            <article class="item">
+                <p class="item-p">Learn new skills</p>
+                <h3 class="item-title">HTML Basics</h3>
+                <ul>
+                    <li><em>Discovering</em> HTML and Tags</li>
+                    <li><strong>Structuring</strong> Text with Tags</li>
+                    <li>Building Buttons</li>
+                    <li>Creating Links</li>
+                </ul>
+                <a href="#" class="btn">Continue</a>
+            </article>
+            <article class="item">
+                <p class="item-p">Learn new skills</p>
+                <h3 class="item-title">HTML Basics</h3>
+                <ul>
+                    <li><em>Discovering</em> HTML and Tags</li>
+                    <li><strong>Structuring</strong> Text with Tags</li>
+                    <li>Building Buttons</li>
+                    <li>Creating Links</li>
+                </ul>
+                <a href="#" class="btn">Continue</a>
+            </article>
+            <article class="item">
+                <p class="item-p">Learn new skills</p>
+                <h3 class="item-title">HTML Basics</h3>
+                <ul>
+                    <li><em>Discovering</em> HTML and Tags</li>
+                    <li><strong>Structuring</strong> Text with Tags</li>
+                    <li>Building Buttons</li>
+                    <li>Creating Links</li>
+                </ul>
+                <a href="#" class="btn">Continue</a>
+            </article>
+        </section>
+        <aside class="aside">
+            <h4 class="aside-prework">PREWORK</h4>
+            <h4 class="aside-desc">What is Prework?</h4>
+            <p>These exercises serve as a warm-up for your coding journey with Mimo Dev. Try to complete as much as you can before
+            starting with your group, but don't worry if you miss something – you don't need to finish every exercise to proceed
+            further.</p>
+        </aside>     
     </main>
     <footer>
         <p>Your learning plan is handcrafted for you every week by 👩🏻‍🏫 Cathy</p> <!-- ctrl+cmd+space for emoji -->

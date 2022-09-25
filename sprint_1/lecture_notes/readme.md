@@ -27,6 +27,9 @@
 [Empty / Self-Closing Tag](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)
 ![emptyele](./assets/emptyele.png)
 
++ HTML is basically the skeleton of our webpage that gets rendered to our client
++ An empty element is an element from HTML, SVG, or MathML that cannot have any child nodes (i.e., nested elements or text nodes).
+
 ---
 
 ## 2. Common HTML Elements & Structure
@@ -76,9 +79,13 @@
 `<aside>` - contains content that is indirectly related to the main content within the section.
 `<footer>` - generally contains information about the site, such as site owner, contact information, copyright, etc.
 
++ Using specific semantic elements improves the accessibility of our webpage and helps our potential audience with disability and has trouble with vision. Using the screen reader, our users with disability can visualise our webpage more easily.
+
 ---
 
-## Block Element vs Inline Elements
+There are different types of elements:
+
+## Block Elements vs Inline Elements
 
 * Block elements take over the entire row, inline elements don't.
 * [HTML Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
@@ -120,8 +127,9 @@
 ---
 
 ## To-Do List
-1. Mimo_dev - Sprint 1
-2. The Bean Machine project - Replit 
+1. Sprint 2
+2. Make sure to join Replit team, if you don't have access to it make sure to slack me your email and/or Replit username.
+3. The Bean Machine on Replit
 
 + Let's go over how to use Replit.
 
