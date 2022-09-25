@@ -1,0 +1,12 @@
+/* Including one css file into other */
+@import "style2.css";
+
+h1 {
+    color: green;
+}
+
+.css1 {
+    color: black;
+    background-image: linear-gradient(to right, #DFF1DF, #11A00C);
+    position: static;
+}
