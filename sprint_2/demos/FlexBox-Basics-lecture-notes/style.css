@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  /* background-color:yellow;
+  height:650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: flex-end; */
+  /* flex-wrap: wrap; */
+
+  /* 
+  space-around vs space-evenly
+  https: //www.samanthaming.com/flexbox30/14-space-around-vs-space-evenly/ 
+  */
+}
+.item{
+  width: 120px;
+  height: 120px;
+  color: white;
+  text-align:center;
+}
+.item-one{
+  background-color:green;
+  /* padding: 20px;
+  border: solid 5px black; */
+}
+.item-two{
+  background-color:red;
+  /* padding: 20px;
+  border: solid 5px black; */
+}
+.item-three{
+  background-color:purple;
+}
+
+.container-one, .container-two, .container-three {
+  margin: 10px;
+  /* display: flex; */
+}
+
+.container-two {
+  flex-direction: row-reverse;
+}
+
+.container-one {
+  /* justify-content: space-between;
+  background-color: pink;
+  padding: 10px;
+  width: 80%; */
+}
+

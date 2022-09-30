@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="example.css">
+  <script src="https://kit.fontawesome.com/ee0bba5d35.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <i class="fa fa-solid fa fa-thumbs-up fa-5x"></i>
+  <i class="fas fa-solid fas fa-thumbs-up fa-5x"></i>
+  <i class="fab fa-brands fab fa-linkedin fa-5x"></i>
+  <i class="fab fa-brands fab fa-linkedin fa-5x"></i>
+            
+  <!-- 
+    ABOVE WORKS
+
+    This used to work with the "fa" prefix `fa fa-linkedin` 
+    but now the fa prefix is deprecated for many icons in the most recent version of the api
+    so now must add either `fas` or `fab` UNLESS `fa` prefix still works.
+
+    check out: 
+    Kits on font awesome https://fontawesome.com/kits
+    The issue on stackOverflow https://stackoverflow.com/questions/26867795/font-awesome-is-not-showing-icon
+  
+    BELOW DOES NOT WORK
+  -->
+
+  <i class="fa-brands fa-linkedin fa-5x"></i>
+  <i class="fa-solid fa-thumbs-up fa-5x"></i>
+</body>
+</html>
+        

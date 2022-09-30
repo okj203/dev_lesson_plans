@@ -127,3 +127,4 @@ class: invert
 * [MDN HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [MDN CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [CSS Syntax](https://developer.mozilla.org/en-US/docs/Glossary/property/CSS)
+* [HTML encoder/decoder](https://www.w3docs.com/tools/html-encoder/)

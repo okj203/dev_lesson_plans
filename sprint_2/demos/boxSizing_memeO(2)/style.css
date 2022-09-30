@@ -1,0 +1,165 @@
+:root {
+    background-color: rgb(244 248 254);
+    --color-var: lavender;
+    --medium-gray: #7a88ba;
+    --medium-blue: rgb(228 239 252);
+    /* rgb stands for red, green, blue, and refers to a system for representing the colors to be used on a computer display. */
+    --frog-green: #62d76b;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: rgb(62 65 109);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+
+body {
+    margin: 5% 17%;
+}
+
+.meme_o {
+    text-decoration: none;
+    font-size: 20pt;
+    color: inherit;
+    /* By default an anchor tag does not inherit attributes like color if an href attribute is present. */
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    /* top - right - bottom - left */
+}
+
+.header-text {
+    margin: 10px 0;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+.prework {
+    color: var(--frog-green);
+}
+
+.description {
+    color: var(--medium-gray);
+}
+
+
+/* nav, footer */
+
+nav {
+    margin: 0 0 10px 0;
+}
+
+nav>a {
+    /* immediate children */
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--medium-gray);
+}
+
+nav .jump {
+    /* decendent */
+    /* nav a:first-child { */
+    /* nav a:last-child { */
+    /* nav a:nth-child(3) { */
+    color: #0078e6;
+}
+
+.btn {
+    background-color: var(--medium-blue);
+    border-radius: 15px;
+    padding: 8px;
+}
+
+nav,
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+footer {
+    justify-content: space-evenly;
+    background-color: var(--color-var)
+}
+
+footer>div>a {
+    text-decoration: none;
+}
+
+/* main */
+
+.content {
+    display: flex;
+}
+
+.items {
+    width: 65%;
+    margin-left: 10px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.item-p {
+    padding: 17px 20px 0;
+    margin-bottom: 5px;
+    color: var(--frog-green);
+}
+
+.item li {
+    padding-bottom: 10px;
+}
+
+.item>ul {
+    margin: 15px 0 15px 45px;
+}
+
+.item>.btn {
+    background-color: var(--frog-green);
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    /* removes the underline from an anchor tag */
+}
+
+.item-title {
+    border-bottom: solid 2px var(--frog-green);
+    margin: 0px 20px;
+    /* top - right - bottom - left. if only 2 values are given, style is applied vertically and horizontally. */
+    padding-bottom: 10px;
+}
+
+/* aside */
+
+.aside {
+    width: 35%;
+    height: 100%;
+    /* if height gets assigned with 'px,' i.e. 350px, the text might overflow depending on the size of the browser and would look less responsive */
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 25px;
+    padding: 60px 20px;
+}
+
+aside>.aside-prework {
+    color: #0078e6;
+}
