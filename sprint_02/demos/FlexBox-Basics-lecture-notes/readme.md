@@ -12,7 +12,7 @@
 
 QUESTION:
 Why do all divs (.item) has the width of inline items with the height of 100% as soon as we add `display: flex`?
--> B/c upon adding `display: flex`, `align-items: stretch` gets applied automatically.
+-> B/c upon adding `display: flex`, `align-items: stretch` gets applied automatically, if we don't specify the height of the items.
 
 If you don't specify the height of the flex items (aka children elements of a flex container), they automatically take the height of their parent, b/c by default, the align-items property is set to "stretch".
 

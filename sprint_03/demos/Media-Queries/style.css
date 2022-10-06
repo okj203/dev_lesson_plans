@@ -1,0 +1,97 @@
+* { 
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+} 
+
+.text-container{ 
+    background-color: pink;
+    color:red;
+}
+.box-container{
+    display:flex;
+    justify-content: center;
+    background-color:green;
+    height:400px;
+}
+.box{
+    width:120px;
+    height:120px;
+
+}
+.box-one{
+  background-color: pink;
+}
+.box-two{
+    background-color: rgb(140, 54, 68);
+}
+.box-three{
+    background-color: rgb(44, 172, 112);
+}
+.box-four{
+    background-color:blue;
+}
+
+/* DESKTOP FIRST */
+/* @media (max-width:768px) { 
+  .text-container{ 
+        background-color: purple;  
+    }
+
+}
+
+@media (max-width: 480px) {
+    .text-container { 
+        background-color: blue;
+     }
+
+     .box-container{
+        flex-direction:column;
+        align-items:center;
+     } 
+} */
+
+/* MOBILE FIRST */
+
+/* @media (min-width:480px){
+    .text-container { 
+        background-color: blue;
+     }
+} */
+
+/* MEDIA TYPES */
+
+/* @media speech {
+  .text-container {
+    background-color: blue;
+  }
+}
+
+@media print { 
+    .text-container {
+    color: black;
+  }
+}
+
+@media screen and (max-width:768px){
+    .text-container {
+        color: black;
+      }  
+} */
+
+/* ORIENTATION */
+
+/* @media (orientation:landscape){
+    .text-container{ 
+        background-color: red;
+    }
+}
+
+@media (orientation:portrait){
+    .text-container{ 
+        background-color: purple;
+    }
+} */
+
+
+
