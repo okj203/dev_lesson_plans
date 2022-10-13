@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: brown;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 70px;
+    align-items: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.menu-container {
+    display: flex;
+}
+
+.burger {
+   display: none; 
+}
+
+#burger {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #burger:checked + .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: purple;
+        align-items: center;
+        position: absolute; 
+        /* takes the element out of the normal flow; positioned absolutely in relation to its nearest ancestor */
+        width: 100%;
+        left: 0;
+        top: 70px;
+    } 
+}
+
+/* .test {
+    display: flex;
+    justify-content: space-between;
+} */
