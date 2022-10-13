@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+}
+
+.recipe-card:hover {
+  border: solid 1px orange;
+}
+
+.card-body h2,
+.card-body p {
+  margin: 8px 16px;
+}
+
+.card-body img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-button {
+  margin-bottom: 10px;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.sidebar img {
+  border-radius: 8px;
+  width: 250px;
+}
+
+i {
+  font-size: 30px;
+  color: orange;
+}
+
+.footer {
+  background-color: aliceblue;
+}
+
+/* ---------- DEMO ---------- */

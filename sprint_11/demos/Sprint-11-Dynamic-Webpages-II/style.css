@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width:200px;
+    height:200px;
+}
+
+.blue-bg{
+    background-color: blue;
+}
+.better-img{
+    border-radius:16px;
+}
+.all-buttons{
+    background-color: orange;
+    color:white;
+    padding:8px 16px;
+    margin-top:5px;
+    border:none;
+    border-radius:8px;
+}
+
+.content{
+    border:1px solid black;
+    min-height:200px;
+}

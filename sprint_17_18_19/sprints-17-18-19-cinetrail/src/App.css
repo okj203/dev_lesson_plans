@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --red: #e50916;
+  --white:#fff; 
+  --header-height:70px;
+  --dark-bg:#221f1f;
+  --light-bg:#3C3C3C;
+  --transparent-bg:rgba(20, 20, 20, 0.7);
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color:var(--dark-bg);
+  color:white;
+}

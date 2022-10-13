@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+} 
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.person-container{
+    background-color: aqua;
+    width:200px;
+    min-height:200px;
+    margin:10px;
+}
+.person-image{
+    width:100px;
+    height:100px;
+}

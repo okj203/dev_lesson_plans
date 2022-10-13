@@ -1,4 +1,4 @@
-+ Note: Media Query is NOT part of our dashboard or curriculum! So please pay extra attention during the lecture.
++ Note: Media Query is NOT part of our dashboard or curriculum! But it's an important topic that's only covered by a live lecture. So please don't be surprised if you don't see anything relevant on Mimo_Dev.
 
 0. Go to bbc.co.uk and open the devtool's toggle device toolbar - cmd+up+M
 
@@ -40,11 +40,11 @@ and css default setting
 }
 ```
 
-2. What if I want the background color to be different for table users? What is the size of an ipad? Let's take a look at our break-points img. This is what developers use to implement media queries for devices of different sizes.
+2. What if I want the background color to be different for tablet users? What is the size of an ipad? Let's take a look at our break-points img. This is what developers use to implement media queries for devices of different sizes.
 
 The different numbers in the img represent different widths of different devices in px. These are the widths that we'll use to create different layouts.
 
-Let's first make the width of our browser 763px. 
+Let's first make the width of our browser 768px. 
 
 Then we use the @media query.
 
@@ -73,7 +73,7 @@ All the stylings added outside the @media queries are the default setting. i.e.
     }
 }
 ```
-Now as we change the width of our screen the background color changes. Let's say that we want the text to be red. Should we add `color: red` to very media query? No, that's NOT DRY. Any default or common styling can be added to the selectors OUTSIDE the media queries.
+Now as we change the width of our screen, the background color changes. Let's say that we want the text to be red. Should we add `color: red` to every media query? No, that's NOT DRY. Any default or common styling can be added to the selectors OUTSIDE the media queries.
 
 ```css
 .text-container{ 
@@ -84,9 +84,9 @@ Now as we change the width of our screen the background color changes. Let's say
 So far, we've added all the default stylings first, and then desktop stylings, and then tablet, and then mobile device. From large to small. This kind of approach is called `DESKTOP FIRST approach`.
 
 3. But there's another approch: `MOBILE FIRST approach`.
-If I want my styling to be done primarily for mobile devices, then I can change my screen width, and add all my default stylings for the adjusted screen size, and then add media queries primarily for mobile devices.
+If I want my styling to be done primarily for mobile devices, then I can change my screen width, and add all my default stylings for the adjusted screen size, and then add media queries for other screen sizes, so that my stylings will be done primarily for mobile devices.
 
-Let's go ahead and comment out all the `DESKTOP FIRST approach`.
+Let's go ahead and comment out all the `DESKTOP FIRST approach`, and try the mobile first approach.
 
 ```css
 @media(min-width:480px){
@@ -122,10 +122,10 @@ Some student would create an app for desktop and use the `MOBILE FIRST approach`
   background-color: pink;
 }
 .box-two{
-    background-color: rgb(140, 54, 68);
+    background-color: brown;
 }
 .box-three{
-    background-color: rgb(44, 172, 112);
+    background-color: green;
 }
 .box-four{
     background-color:blue;
@@ -201,7 +201,7 @@ I can write css rules that only applies for either landscape or portrait mode. T
 @media (orientation:landscape){
     /* The styling will be applied as long as the width of the browser is greater than the height */
     .text-container{ 
-        background-color: red;
+        background-color: gray;
     }
 }
 

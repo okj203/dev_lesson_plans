@@ -38,6 +38,7 @@
 ```css
 header{
     background-color: brown;
+    color:white;
 }
 ```
 2. Now how can we place the Mimo (p tag) and all the anchor tags in one row, but apart from each other?
@@ -46,19 +47,19 @@ header{
 ```css
 header{
     background-color: brown;
+    color:white;
     display: flex;
     justify-content: space-between;
     padding:0 20px;
     height:70px;
     /* but we also want to place them vertically in the center */
     align-items: center;
-    color:white;
 }
 
 /* We can also style the anchor tags */
 
 a{
-  color:white;
+  color:white; /* or color:inherit */
   text-decoration: none;  
 }
 ```
@@ -158,15 +159,7 @@ First, we change the p tag for the burger icon into a label tag.
    </header>
 ```
 
-And just for now, let's comment out the display:none.
-
-```css
-.burger{
-    /* display:none; */
-}
-```
-
-Something we must know is that label and input work together. When I click this input checkbox, I want the icon to be selected and be connected to the icon, because this label is the label of this input. The input is the checkbox, and label is the icon, and I need them to be connected. 
+Something we must know is that label and input work together. When I click this input checkbox, I want the checkbox to be selected and be connected to the icon, because this label is the label of this input. The input is the checkbox, and label is the icon, and I need them to be connected. 
 
 And the way label and input get connected is through:
 
@@ -191,16 +184,9 @@ The for attribute of the label and the id attribute of the input should match an
    </header>
 ```
 
-Now if I do interact with the input, it will be reflected on the lable. And that is because the label-for and input-id are connected.
+Now if I do interact with the label, it will be reflected on the input. And that is because the label-for and input-id are connected.
 
 Since we used the input type checkbox, we can make it do something when it's checked and do something else when it's unchecked.
-
-```css
-.burger{
-    /* let's uncomment this */
-    display:none;
-}
-```
 
 We don't want to make the checkbox to be visible, but we'll do that later.
 
@@ -251,10 +237,10 @@ And what I want to do is when it's checked, I want to bring all the menu back.
         So now we can add styling to the dropdown menu for when the label is clicked.
         */
 
+        background-color: purple;
         display:flex;
         flex-direction:column;
         align-items: center;
-        background-color: purple;
 
         /* Now every time I click the label, the menu bar shows up, but because it's fixated on the current position, even if we change the width to 100%, it only takes up how much ever space it has within its limited spot.
         

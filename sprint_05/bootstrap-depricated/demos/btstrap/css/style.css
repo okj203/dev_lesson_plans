@@ -1,0 +1,14 @@
+.default {
+    border: #1E96FF 1px solid;
+    background-color: #1E96FF;
+}
+
+.container {
+    border: #1E96FF 1px solid;
+}
+
+
+.container-fluid {
+    border: #1E96FF 1px solid;
+    /* padding: 10px; */
+}

@@ -1,0 +1,47 @@
+<!-- *****************************************************************************/
+* Title: "Sprint-10-Dynamic-Webpages-I" source code
+* Author: Elif Balci
+* Availability: https://github.com/mimodevs/cohort_11/tree/main/js-live-sessions/Sprint-10-Dynamic-Webpages-I
+****************************************************************************/ -->
+
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <div class="container">
+       <div class="title-container">
+         <h1>SQUARE and CUBE</h1>
+         <input placeholder="Enter a number" id="input-number" type="number"/>
+         <button onclick="calculateResult()" class="calc-btn">calculate</button>
+       </div>
+       <div class="result-container">
+         <div class="result">
+           <p>Square</p>
+           <p id="squared-result">?</p>
+         </div>
+         <div class="result">
+           <p>Cube</p>
+           <p id="cubed-result">?</p>
+         </div>
+       </div>
+       <div class="history-section">
+         <p>History</p>
+         <div id="history-container">
+                   
+         </div>
+         <div>
+            <button onclick="deleteLastEntry()" class="delete-btn">delete last entry</button>
+            <button onclick="clearHistory()" class="clear-btn">clear history</button>
+         </div>
+         
+       </div>
+         
+     </div>
+    <script src="script.js"></script>
+  </body>
+</html> 
