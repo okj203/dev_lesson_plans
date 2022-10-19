@@ -1,5 +1,5 @@
 # How to use this repo
-This repo is created to help instructors prepare for Mimo lectures in the most efficient way possible. By utilizing the lecture prep materials provided in this repo, instructors won't need to reinvent the wheel for every cohort!
+This repo is created to help instructors prepare for <program_name> lectures in the most efficient way possible. By utilizing the lecture prep materials provided in this repo, instructors won't need to reinvent the wheel for every cohort!
 
 
 ## Marp VS Code extension
@@ -36,4 +36,4 @@ sprint_1
  
 ## How to contribute to this repo
 + If you have any suggestions or would like to contribute to this repo, please create a separate branch to make a pull request. Branch name should include your name as well as the sprint, which you would like to contribute to. i.e. `cathy_sprint_2`. Your suggestions and contributions will be carefully reviewed by the Mimo instructional team to be merged to main. 
-+ If you have any questions or concerns, please reach out to `cathy@getmimo.com`. 
++ If you have any questions or concerns, please reach out to `okj203@gmail.com`. 
